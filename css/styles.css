@@ -1,0 +1,10 @@
+.navbar{
+    display:flex;
+    justify-content: right;
+}
+
+ul{
+    display: flex;
+    flex: row;
+    gap:2rem;
+}
