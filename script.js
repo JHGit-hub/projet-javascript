@@ -1,27 +1,30 @@
+
 let nbtraining = prompt("Combien d'entrainement veux-tu faire?");
+const energyGain = 4;
 let energy = 10;
 let monster = 15;
 const chest = 6;
 
 
-/** entrainement **/
+ // entrainement
 
 for (let training = 1; training <= nbtraining; training ++){
     alert("Entrainement n°" + training + " terminé");
-    energy = energy + 4;
+    alert("Bravo! tu as gagné " + energyGain + " d'énergie");
+    energy = energy + energyGain;
     if(training == nbtraining){
         alert("Bravo, tu as fini les entrainements, tu es prêt pour aller au combat")
         alert("tu as désormais " + energy + " d'énergie")
     }
 }
 
-/**  combats **/
+ // combats
 alert("Chaque combat réduira ton energie de 4 points")
 let fight;
 
 while(energy > 0){
     alert("Un ennemi se présente face à toi, il te reste " + energy + " d'énergie")
-    let fight = prompt("Veux-tu engager le combat?")
+    let fight = prompt("Veux-tu engager le combat? Réponds oui ou non")
     if(fight === "oui"){
         alert("Victoire!")
         energy = energy - 6;
@@ -38,7 +41,7 @@ if(energy <=0 ){
 let victory = 15 - monster
 
 
-/** loot  **/
+ // loot
 
 
 if (fight === "non" && victory <3 ){
