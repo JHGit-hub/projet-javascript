@@ -8,3 +8,6 @@ ul{
     flex: row;
     gap:2rem;
 }
+ul li{
+    list-style: none;
+}
