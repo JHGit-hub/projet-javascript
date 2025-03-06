@@ -1,3 +1,5 @@
+// JEUX DU HERO
+
 
 let nbtraining = prompt("Combien d'entrainement veux-tu faire?");
 const energyGain = 4;
@@ -73,10 +75,15 @@ if (victory >=3 ){
         chest2 = prompt ("Choisis un autre coffre entre 1 et 6 que tu n'as pas déjà ouvert") 
     }
     alert("Tu as choisi le coffre "+ chest3)
-
+    let loot = "Tu as gagné "
     let tresor = [allChest[chest1], allChest[chest2], allChest[chest3]] //loot
+    for (let i=0; i < tresor.length; i++){
+        loot = loot + tresor[i] + ", ";
+    }
+    alert(loot)
+    /**
     tresor.forEach(function(loot){
         alert("Tu as gagné " + loot);
-    })
+    }) **/
     alert("Ton aventure est terminée, pour le moment")
 }
