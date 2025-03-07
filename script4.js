@@ -10,12 +10,11 @@ function achat(prixBonbon,argent){
     return false;
 }
 
-let weather = prompt("Tu veux des conseils pour quel temps? (soleil/pluie/neige/vent)");
-
 
 
 //Exercie 2
 
+let weather = prompt("Tu veux des conseils pour quel temps? (soleil/pluie/neige/vent)");
 function conseilMeteo(weather){
     if(weather === "soleil"){
         alert("Mets de la créme solaire!")
@@ -27,7 +26,6 @@ function conseilMeteo(weather){
         alert("T'envoles pas!")
     }
 };
-
 conseilMeteo(weather);
 
 

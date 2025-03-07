@@ -1,3 +1,5 @@
+// Utilisation de function
+
 function preparerPate(){
     let reponse = prompt("As-tu péparer la pate? (oui/non)");
     if(reponse === "oui"){
