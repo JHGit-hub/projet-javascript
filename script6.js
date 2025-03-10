@@ -1,20 +1,31 @@
-function creerSalutation(nom){
-    return function(){
-        console.log("Bonjour" + nom + " !");
+ //creation tableau
+
+let prenom = [
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+];
+
+
+// remplissage tableau
+
+
+let i = 0;
+while( i<prenom.length ){
+    let j = 0;
+    while( j<prenom.length ){
+        prenom[i][j] = prompt ("Donne moi un prénom pour la case de la ligne " + (i+1) + " et de la colonne " + (j+1));
+        j++;
     };
-}
-
-const salutationAlice = creerSalutation("Alice");
-const salutationBob = creerSalutation("Bob");
+    i++;
+};
 
 
-function creerSalutation(nom){
-    return function(){
-        console.log("Bonjour " + nom + " t'étais passé OU?");
-    };
-}
-const salutationCharlie = creerSalutation("Charlie");
+//affichage tableau
+
+prenom.forEach(function(surname){
+    console.log(surname);
+});
 
 
-
-
+// comment afficher en ligne avec des "|" ?
