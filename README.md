@@ -10,6 +10,11 @@ Exercices Js
 
 ### ✨ [Demo](https://github.com/JHGit-hub/projet-javascript/actions/runs/14173712674/job/39703399576)
 
+## Technology used
+-HTML
+-CSS
+-Javascript
+
 ## Author
 
 👤 **Julien - Promo 2025**
